@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+    mongo:
+        image: mongo
+        ports:
+            - "27017:27017"
+        container_name: mongo
+        restart: always
+
+    app:
+        build: .
+        ports:
+            - "8081:8081"
+        depends_on:
+            - mongo
+        environment:
+            - SPRING_DATA_MONGODB_URI=mongodb://mongo:27017/customermentor
+        restart: always
+
+#Usando comando docker run
+#    docker run -d \
+#    --name customermentor-mongo \
+#    -p 27017:27017 \
+#    -e MONGO_INITDB_DATABASE=customermentor \
+#    -v mongo-data:/data/db \
+#    mongo:6.0
