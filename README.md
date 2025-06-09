@@ -123,23 +123,6 @@ A aplicação estará disponível em:
 > ```properties
 > server.port=8081
 > ```
-
----
-
-## ✅ Próximos Passos
-
-- [ ] Adicionar autenticação com JWT
-- [ ] Criar módulos de Produto e Pedido
-- [ ] Implementar fluxo de status de pedido
-- [ ] Adicionar testes de integração
-- [ ] Disponibilizar exemplos no Postman
-
----
-
-## 📄 Licença
-
-Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais informações.
-
 ---
 
 **Desenvolvido com ❤️ para ajudar novos talentos a iniciarem sua jornada no backend Java.**
